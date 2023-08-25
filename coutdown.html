@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20%;
+            height: 200px;
+            margin: auto;
+            margin-top: 200px;
+            background-color: rgb(79, 176, 41);
+        }
+
+        #para {
+            display: inline-block;
+            margin-top: 80px;
+            color: white;
+            margin-left: 70px;
+            width: 100%;
+        }
+
+        #h {
+            float: left;
+            margin-top: 0px;
+        }
+
+        #m {
+            float: left;
+            margin-top: 0px;
+        }
+
+        #s {
+            float: left;
+            margin-top: 0px;
+            
+        }
+
+        #ms {
+            float: left;
+            margin-top: 0px;
+        }
+
+        input {
+            width: 55px;
+            height: 30px;
+            border: 0;
+            background-color: blueviolet;
+            margin-top: 30px;
+            margin-left: 15px;
+            color: white;
+            cursor: pointer;
+            clear: both;
+        }
+
+        #reset {
+            clear: both;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="para">
+            <p id="h">00:</p>
+            <p id="m">00:</p>
+            <p id="s">00</p>
+
+        </div>
+        <input id="start" type="button" value="start">
+        <input id="stop" type="button" value="stop">
+        <input id="reset" type="button" value="reset">
+    </div>
+    <script>
+        let h = document.getElementById("h");
+        let m = document.getElementById("m");
+        let s = document.getElementById("s")
+        let start = document.getElementById("start");
+        let stop = document.getElementById("stop");
+        let reset = document.getElementById("reset");
+        let sec = 0;
+        let min = 0;
+        let hor = 0;
+
+    
+         start.addEventListener("click", function () {
+           c=  setInterval(() => {
+               
+                sec++;
+                s.innerHTML = sec;
+
+                if (sec == 60) {
+                    sec = 0;
+                    min++;
+                    if (min >0) {
+                        m.innerHTML = `0${min}:`;
+                    }
+                    else if (min > 9) {
+                        m.innerHTML = `${min}:`;
+                    }
+                  
+                }
+                if (min == 0) {
+                    m.innerHTML = `00:`
+                }
+                  
+
+
+                if (min == 60) {
+
+                    min = 0;
+                    hor++;
+                   
+                    if (min >0) {
+                        h.innerHTML = `${hor}0:`
+                    }
+                    if (min > 9) {
+                        m.innerHTML = `${min}:`;
+                    }
+                }
+                if (hor == 0) {
+                    h.innerHTML = `00:`
+                }
+            
+             
+              
+              
+            }, 1000);
+        })
+       // stop.addEventListener("click", clearInterval((c)=>{
+       //     console.log("joun")
+       // }))
+        stop.addEventListener("click",()=>{
+           
+            clearInterval(c);
+        })
+        reset.addEventListener("click",()=>{
+          
+           h.innerHTML=`00:`;
+           m.innerHTML=`00:`;
+           s.innerHTML=`00`;
+           clearInterval(c);
+       })
+
+    </script>
+</body>
+
+</html>
