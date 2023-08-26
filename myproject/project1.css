@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+nav {
+    background-color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 14px;
+  }
+  .menu li a:hover{
+    color: black;
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+    }
+    .menu li {
+      margin: 10px 0;
+    }
+    .menu li a {
+      padding: 10px;
+      display: block;
+    }
+  }
+  
+
+
+#div2{
+    background-color: lightgrey;
+    height: 200px;
+}
+#div2 img{
+    height: 200px;
+    width: 200px;
+    border-radius:100px ;
+    margin-left:40% ;
+    margin-top: 30px;
+  
+}
+
+#div3{
+    height: 400px;
+ 
+    margin-top: 0px;
+    clear: both;
+}
+
+
+#heading{
+        font-size: 35px;
+        margin: 40px 0% 0 34%;
+}
+#div3 p{
+    margin-top: 0px;
+    margin-left: 0%;
+    text-align: center;
+}
+#div3 a{
+    color: black;
+    font-size: 22px;
+    margin-left: -30.3%;
+    margin: 0;
+    margin-top: -10px;
+}
+#inerdiv{
+    float: left;
+    margin-top: 40px;
+    width: 45%;
+    height: 400px;
+   
+}
+#heading2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 53%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+#inerdiv img{
+    margin-top: 15px;
+    margin-left: 50%;
+    width: 280px;
+    height: 320px;
+}
+#div4{
+    width: 100%;
+    height: 180px;
+    background-color: gray;
+}
+#inerdiv2{
+    float: left;
+  
+   width: 280px;
+   margin-left: 70px;
+   height: 350px;
+}
+#inerdiv2 img{
+    width: 280px;
+    height: 330px;
+   margin-top: 15px;
+   margin-left: 0px;
+}
+ input{
+   height: 40px;
+   text-align: center;
+   margin-top: 10px;
+   padding: 10px 17px;
+   background-color: gray;
+   border: 2px rgb(253, 251, 251) solid;
+   color: white;
+}
+#div5{
+    width: 100%;
+    height: 600px;
+    
+    margin-top: -15px;
+}
+#inerdiv5{
+    clear: both;
+    float: left;
+    width: 45%;
+    height: 300px;
+   
+}
+#inerdiv5 p{
+    text-align: right;
+    margin-top: 40px;
+    font-size: 37px;
+    line-height: 37px;
+    color: rgb(9, 9, 9);
+    margin-right: 4%;
+}
+#inerdiv5r{
+    float: left;
+    width: 40%;
+}
+#inerdiv5r p{
+    margin-left: 3%;
+    margin-top: 40px;
+    text-align: justify;
+}
+#inerdiv5r input{
+    color: black;
+    border: 1px black solid;
+    margin-left: 3%;
+    background-color: white;
+}
+#space{
+    width: 70%;
+    height: 3px;
+    background-color: black;
+    clear: both;
+    margin-left: 20%;
+}
+#inerdiv5b{
+   
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+#inerdiv5b img{
+    width: 60px;
+    margin-bottom: -15px;
+}
+#inerdiv5b a{
+    text-decoration: none;
+    color: black;
+    margin-top: -15px;
+}
+#div6{
+    width: 100%;
+    height: 700px;
+   
+}
+#inerdiv6t{
+    width: 80%;
+    height: 230px;
+    margin-left: 10%;
+  
+    margin-bottom: 5px;
+}
+#inerdiv6t img{
+    width:33% ;
+    height: 230px;
+    margin: 0;
+   
+}
+#div6 input{
+    margin-left: 45%;
+    border: 2px black solid;
+    background-color: white;
+    color: black;
+}
+#div7{
+    width: 100%;
+    height: 340px;
+   
+}
+#inerdiv7l{
+    float: left;
+   
+    width: 45%;
+    height: 200px;
+    
+    margin-top: 60px;
+}
+#inerdiv7l p{
+    text-align: justify;
+    margin-left: 110px;
+}
+#inerdiv7l input{
+    background-color: white;
+    color: black;
+    border: 3px black solid;
+    margin-left: 110px;
+}
+#inerdiv7r{
+    float: left;
+    width: 40%;
+    margin-left: 60px;
+    height: 300px;
+   
+    margin-top: 60px;
+}
+#inerdiv7r p{
+    text-align: justify;
+}
+#div8{
+    background-image: url(../bootstrap/images/background1.jpeg);
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+#div8 p{
+    width: 65%;
+    margin-left: 17%;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
+#inerdive8iimg{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 33%;
+   
+}
+#img2{
+    margin-left: 20px;
+    width: 40px;
+    height:40px;
+    margin-top: 15px;
+    margin-bottom:20px ;
+}
+#div9{
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    margin-top: -20px;
+}
+#div9p{
+    width: 70%;
+    margin-left: 15%;
+   text-align: center;
+   color: white;
+}
